@@ -10,6 +10,8 @@ import { StatFiltersComponent } from '../stat-filers/stat-filters.component';
 })
 export class VideoDashboardComponent implements OnInit {
 
+  videoUrl = 'https://api.angularbootcamp.com/videos';
+
   constructor() { }
 
   ngOnInit() {
