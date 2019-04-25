@@ -9,6 +9,7 @@ import { Video } from '../../app-types';
 })
 export class VideoListComponent implements OnInit {
 
+  selectedId: string;
   list: Video[] = [
   {
     "title": "Angular Observable Data Flow",
@@ -197,7 +198,9 @@ export class VideoListComponent implements OnInit {
   }
 ];
 
-  constructor() { }
+  constructor() {
+    this.selectedId = this.list[0].id;
+   }
 
   ngOnInit() {
   }
