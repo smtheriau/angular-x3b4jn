@@ -10,7 +10,7 @@ import { Video } from '../../app-types'
 export class VideoCardComponent implements OnInit {
 
   @Input() video: Video;
-  @Input() selected: string;
+  @Input() selected: boolean;
 
   constructor() { }
 
